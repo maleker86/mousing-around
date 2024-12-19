@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2rb82tfluyok"]
+
+[ext_resource type="Texture2D" uid="uid://cpkecjsp40ujn" path="res://stoneCenter.png" id="1_tfwc6"]
+[ext_resource type="PackedScene" uid="uid://bewar3xgg67x1" path="res://player.tscn" id="2_awb5v"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rq6jo"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+z_index = -100
+material = SubResource("ShaderMaterial_rq6jo")
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_tfwc6")
+stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_awb5v")]
+position = Vector2(596, 267)
