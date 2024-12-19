@@ -1,11 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2rb82tfluyok"]
+[gd_scene load_steps=5 format=3 uid="uid://c2rb82tfluyok"]
 
+[ext_resource type="Script" path="res://level.gd" id="1_sdthn"]
 [ext_resource type="Texture2D" uid="uid://cpkecjsp40ujn" path="res://stoneCenter.png" id="1_tfwc6"]
 [ext_resource type="PackedScene" uid="uid://bewar3xgg67x1" path="res://player.tscn" id="2_awb5v"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rq6jo"]
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_sdthn")
 
 [node name="Background" type="TextureRect" parent="."]
 z_index = -100

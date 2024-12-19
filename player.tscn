@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bewar3xgg67x1"]
+[gd_scene load_steps=4 format=3 uid="uid://bewar3xgg67x1"]
 
+[ext_resource type="Script" path="res://player.gd" id="1_qebkt"]
 [ext_resource type="Texture2D" uid="uid://dx48hgu5yy38x" path="res://mouse.png" id="1_yubb8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fanef"]
@@ -7,6 +8,7 @@ size = Vector2(100, 60)
 
 [node name="Player" type="RigidBody2D"]
 gravity_scale = 0.0
+script = ExtResource("1_qebkt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(2, -33)
