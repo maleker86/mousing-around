@@ -1,5 +1,6 @@
 extends RigidBody2D
 
+var number = 4+5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -10,5 +11,5 @@ func _process(_delta: float) -> void:
 	pass
 
 func test():
-	print(10.0 / 7.0)
+	print(number)
 	pass
