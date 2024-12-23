@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt56xtu4ifpm6"]
+
+[ext_resource type="Texture2D" uid="uid://5f6o2cmrp00k" path="res://platformIndustrial_094.png" id="1_x0yna"]
+
+[node name="Maze" type="Area2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture_repeat = 2
+scale = Vector2(2, 2)
+texture = ExtResource("1_x0yna")
+polygon = PackedVector2Array(-61, 48, -32, 141, 281, 137, 443, 251, 293, 402, -58, 397, -283, 321, -565, 461, -500, 652, -183, 728, 1, 624, 227, 721, 302, 631, 472, 706, 671, 792, 603, 453, 469, 645, 292, 556, 202, 645, -7, 542, -194, 677, -467, 607, -507, 477, -285, 374, -43, 459, 346, 469, 536, 248, 318, 81, 68, 70, 156, -33, 132, -202, -189, -164, -36, -27)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(2, 2)
+polygon = PackedVector2Array(-61, 48, -32, 141, 281, 137, 443, 251, 293, 402, -58, 397, -283, 321, -565, 461, -500, 652, -183, 728, 1, 624, 227, 721, 302, 631, 472, 706, 671, 792, 603, 453, 469, 645, 292, 556, 202, 645, -7, 542, -194, 677, -467, 607, -507, 477, -285, 374, -43, 459, 346, 469, 536, 248, 318, 81, 68, 70, 156, -33, 132, -202, -189, -164, -36, -27)

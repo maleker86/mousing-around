@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2rb82tfluyok"]
+[gd_scene load_steps=6 format=3 uid="uid://c2rb82tfluyok"]
 
 [ext_resource type="Script" path="res://level.gd" id="1_sdthn"]
 [ext_resource type="Texture2D" uid="uid://cpkecjsp40ujn" path="res://stoneCenter.png" id="1_tfwc6"]
 [ext_resource type="PackedScene" uid="uid://bewar3xgg67x1" path="res://player.tscn" id="2_awb5v"]
+[ext_resource type="PackedScene" uid="uid://dt56xtu4ifpm6" path="res://maze.tscn" id="3_ha3yp"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rq6jo"]
 
@@ -17,5 +18,11 @@ offset_bottom = 648.0
 texture = ExtResource("1_tfwc6")
 stretch_mode = 1
 
+[node name="Maze" parent="." instance=ExtResource("3_ha3yp")]
+z_index = -50
+position = Vector2(186, 178)
+
 [node name="Player" parent="." instance=ExtResource("2_awb5v")]
-position = Vector2(596, 267)
+position = Vector2(220, -52)
+
+[connection signal="body_exited" from="Maze" to="." method="_on_maze_body_exited"]

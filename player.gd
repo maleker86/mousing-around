@@ -1,10 +1,11 @@
 extends RigidBody2D
 
-var speed = 600;
+var speed = 800;
 
 func _ready() -> void:
 	var equation = add(9,400)
-	print(equation)
+	#print(equation)
+	pass
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("move_right"):
